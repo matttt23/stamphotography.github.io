@@ -1,19 +1,43 @@
 @import url(main-style.css);
 
 
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
+@media screen and (max-width: 768px){
+    .header img{
+        width: 100%;
+        max-width: 130px;
+        flex-direction: row;
+        position: static;
+    
     }
-    .nav-links ul li{
+}
+
+@media screen and (max-width: 1000px){
+    .header{
+        min-height: 100vh;
+        transition: all .5s ease;
+    }
+    .text-box h1{
+        font-size: 40px;
+        transition: all .5s ease;
+        transition-delay: initial   ;
+    }
+    .text-box p{
+        font-size: 20px;
+
+    }
+    .button ul li{
+        word-spacing: px;
+        top: 40px;
+        right: 30px;
         display: block;
     }
-    .nav-links{
+    .button{
+        border-radius: 8px;
         opacity: 80%;
         position: fixed;
         background: gray;
         height: 103vh;
-        width: 200px;
+        width: 50px;
         top: 0;
         right: -200px;
         text-align: left;
@@ -23,12 +47,15 @@
     nav .material-icons{
         display: block;
         color: #fff;
-        margin: 10px;
+        margin: 20px;
         font-size: 22px;
         cursor: pointer;
     }
-    .nav-links ul{
-        padding: 30px;
+    /* .button ul{
+        padding: 0px;
+    } */
+    .cta{
+        min-height: 30vh;
     }
 }
 

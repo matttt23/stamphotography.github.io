@@ -1,10 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     /* font-family: 'Oswald', sans-serif; */
 
 }
+
+/* .background{
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+@media (max-width: 768px){
+    .background{
+        min-height: 25vh;
+    }
+
+} */
+
 .header{
     background-color: #777;
     padding: 10px 0;
@@ -14,6 +30,10 @@
     background-position: center;
     background-size: cover;
     position: relative;  
+}
+
+.header img{
+    position: absolute;
 }
 
 /* -----Css for video background-----
@@ -48,29 +68,61 @@ nav {
 }
 
 nav img{
+    top: 28px;
     width: 150px;
 }
-
-.nav-links{
+/* 
+.button{
     flex: 1;
     text-align: right;
     
-}
+} */
 
-.nav-links ul li{
+.button ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
-.nav-links ul li a{
+.button {
+    opacity: 80%;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(43, 41, 41);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: .5s ease;
+   }
+   
+   .button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(260, 3%, 23%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(49, 62, 117) 0px 7px 29px 0px;
+   }
+   
+   .button:active {
+    letter-spacing: 3px;
+    background-color: hsl(250, 80%, 15%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+
+.button ul li a{
+    display: inline-block;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15x;
+    
 }
 
-.nav-links ul li::after{
+.button ul li::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -80,7 +132,7 @@ nav img{
     transition: 0.25s;
 }
 
-.nav-links ul li:hover::after{
+.button ul li:hover::after{
     width: 100%;
 }
 
@@ -98,6 +150,7 @@ nav img{
 .text-box h1{
     width: 100%;
     font-size: 120px;
+    cursor:default;
     
 }
 .text-box h1:hover{
@@ -106,7 +159,7 @@ nav img{
 
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 24px;
     color: #fff;
 }
 
@@ -242,6 +295,9 @@ h3{
     text-align: center;
     padding-top: 100px;
 }
+.facilities p{
+    font-size: 18px;
+}
 
 .facilities-col{
     flex-basis: 31%;
@@ -270,7 +326,8 @@ h3{
 }
 
 .facilities-col p{
-    padding: 0;
+    font-size: 18px;
+    padding: 2;
 }
 
 .facilities-col h3{
