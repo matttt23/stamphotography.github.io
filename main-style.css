@@ -321,7 +321,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Img/_DSC0187.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Img/cover\ for\ page.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -457,7 +457,6 @@ a:hover {
     padding: 30px 2px;
 }
 .about-col img{
-    background-color: #333;
     width: 100%;
 }
 
